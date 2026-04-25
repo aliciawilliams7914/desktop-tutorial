@@ -3,7 +3,7 @@
   font-family: "Lato", sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6  span { 
@@ -46,8 +46,8 @@ li {
 /* NAVIGATION BAR */
 
 nav {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -70,7 +70,7 @@ nav {
     background-color: #6030b1;
     padding: 8px 20px;
     border-radius: 50px;
-    color:aliceblue
+    color: aliceblue;
     transition: all 300ms ease;
 }
 
@@ -84,9 +84,10 @@ nav {
 
 .personal__logo {
     font-size: 24px;
-    margin-left: px;
+    margin: 0 12px;
     color: #73097b;
     font-weight: bold; 
+    
 }
 
 /* ABOUT ME */
@@ -118,7 +119,8 @@ nav {
     height: 170px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px; rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 30px;
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .about-me__picture {
@@ -137,7 +139,7 @@ padding-top: 8px;
 }
 
 
-about-me__info--para {
+.about-me__info--para {
     font-size: 20px;
     margin-bottom: 28px;
     max-width: 600px;
@@ -151,17 +153,58 @@ about-me__info--para {
 }
 .about-me__link {
     font-size: 20px;
-    color:#242424;
+    color: #242424;
     text-decoration: none;
     padding: 16px 32px;
-    max-
+    max-width: 200px;
 }
  
-.bout-me__img--container {
+.about-me__img--container {
     flex: 1;
     display: flex;
     align-items: center;
 }
 .about-me__img {
     width: 100%;
+}
+/* LANGUAGES */
+
+.container {
+    padding: 50px 0;
+}
+
+.section__title {
+    margin-bottom: 48px;
+}
+
+.language__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language {
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.language__img {
+    width: 100px;
+    max-width: 100px;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.language__name {
+    margin-top: 8px;
+    font-weight: bold;
 }
