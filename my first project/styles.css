@@ -252,8 +252,9 @@ nav {
 
 .project__img {
     object-fit: cover;
-    width: 100%;
+    width: 400%;
     height: 400px;
+    align-items: center;
     object-fit: contain;
     padding: 32px
     border-radius: 8px;
