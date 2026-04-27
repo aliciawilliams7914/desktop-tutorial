@@ -258,10 +258,6 @@ nav {
 }
 
 .project__wrapper {
-    display: flex;
-    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
-    border-radius: 20px;
-    overflow: hidden;
     position: relative;
   
 }
@@ -297,8 +293,11 @@ nav {
 }
  
 .project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(100%);
     opacity: 0;
-transform: translateY(-50%);
 }
 .project__description--title {
     font-size: 40px;
