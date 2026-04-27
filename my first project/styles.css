@@ -295,8 +295,8 @@ nav {
 .project__description {
     position: absolute;
     top: 50%;
-    left: 90px;
-    transform: translateY(100%);
+    left: 50%;
+    transform: translateY(-50%, -50%);
     opacity: 0;
 }
 .project__description--title {
