@@ -250,6 +250,13 @@ nav {
 
 /* PROJECTS */
 
+.project {
+    margin-bottom: 40px;
+}
+
+.project:last-child {
+    margin-bottom: 40px;
+}
 .project__img {
         width: 200%;
         height: 400px;
@@ -333,4 +340,9 @@ nav {
 .project__description--links {
     text-align: left;
     color: #fff;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #242424;
 }
