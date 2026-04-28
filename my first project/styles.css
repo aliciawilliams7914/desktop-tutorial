@@ -442,10 +442,11 @@ color: #fff;
             width: calc(100% / 2);
          }
          .project__description--para {
-             font-size: 16px;
+             font-size: 14px;
          }
 
          .project__description {
+            left: 30px;
             padding-right: 30px;
              font-size: 16px;
          }
@@ -454,16 +455,24 @@ color: #fff;
             .nav__link:not(:last-child) {
                 display: none;
             }
+            .project__description {
+                left: 0;
+                padding: 0;
+                width: 100%;
+            }
             .project__description--para {
                 display: none;
             }
-            .project__description__link {
+            .project__description--link {
                 display: flex;
                 justify-content: center;
             }
-            .project__description--title
+            .project__description--title {
+                line-height: 1;
+                font-size: 32px;
+                text-align: center;
+            }
             .project__description--sub-title {
             margin: 12px 0; 
-                padding: 0;
-                text-align: center;
+            text-align: center;
             }
