@@ -343,7 +343,7 @@ nav {
 }
 
 /* FOOTER */
-.footer {
+footer {
     background-color: #242424;
 }
 
@@ -357,5 +357,14 @@ nav {
 .footer__logo--img {
     width: 70px;
     height: 70px;
+
 }
+
+.footer__social--link, 
+    .footer__copyright {
+    color: #fff;
+    margin-top: 16px;
+   
+}
+
 
