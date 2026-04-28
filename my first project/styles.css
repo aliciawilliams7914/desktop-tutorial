@@ -348,6 +348,10 @@ nav {
 }
 
 .footer__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 8% 0;
 }
 .footer__logo--img {
