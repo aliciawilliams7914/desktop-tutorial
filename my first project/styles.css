@@ -28,6 +28,10 @@ p {
 a {
     text-decoration: none;
     position: relative;
+    transition: opacity 300ms ease;
+}
+a:hover {
+    opacity: 0.8;
 }
 
 .link__hover-effect:after {
@@ -270,7 +274,22 @@ nav {
         opacity: 1;
     }
 }
-
+.wave {
+    display: inline-block;
+    animation: animate-wave 800ms infinite ease-in-out;
+}
+    
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 /* TECH STACK */
 
 .language__img {
