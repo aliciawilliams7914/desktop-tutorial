@@ -173,9 +173,20 @@ nav {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
     margin-bottom: 28px;
-    color: rgba(0, 0, 0, 0.16);
+    animation: animate-profile-picture 800ms 200ms backwards;
+}
+@keyframes animate-profile-picture {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .about-me__picture {
@@ -200,11 +211,13 @@ nav {
     max-width: 600px;
     text-align: center;
     max-width: 500px;
+    animation: fade-up 800ms 600ms backwards;
 }
 
 .about-me__info--title {
     font-size: 36px;
     margin-bottom: 28px;
+    animation: fade-up 800ms 600ms backwards;
 }
 
 .about-me__link {
@@ -213,6 +226,25 @@ nav {
     text-decoration: none;
     padding: 16px 32px;
     max-width: 200px;
+    animation: fade-up 800ms 800ms backwards;
+}
+.about-me__link {
+    animation: fade-up 800ms 800ms backwards;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(40);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-me__img--container {
@@ -228,6 +260,15 @@ nav {
     margin-left: 200%;
     width: 200%;
     height: 200%;
+    animation: fade-in 800ms 600ms backwards;
+}
+@keyframes fading-in {
+    0% {
+       opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* TECH STACK */
